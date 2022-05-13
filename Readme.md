@@ -42,24 +42,24 @@ python3.8 -m venv virtual
 *Remember virtual is the name of our virtual environment but you can choose another name*
 **Activating and Deactivating the virtual environment**
 
-```
+```sh
 source virtual/bin/activate
 ```
 
 **Deactivating**
-```
+```sh
 deactivate
 ```
 
 **Updating pip to the latest version if you don't have it installed globally**
 
-```
+```sh
 curl https://bootstrap.pypa.io/get-pip.py | python
 
 ```
 
 ### Installing Flask
-```
+```sh
 pip install flask
 ```
 
@@ -80,7 +80,7 @@ create a `base.html` file
         {% if title %}
         <title> {{ title }}</title>
         {% else %}
-        <title> Welcome to the best Movie Review website </title>
+        <title> Welcome to the flask cheatsheet </title>
         {% endif %}
     </head>
     <body>
@@ -109,7 +109,7 @@ Flask-WTF extension is a flexible form rendering and validation library.
 It provides a lot of out of the box functionality Like security against
 CSRF(Links to an external site.) Cross site Request Forgery. And also offers validation.
 
-**Insstalling WTF Forms**
+**Installing WTF Forms**
 
 ```
 pip install flask-wtf 
@@ -120,7 +120,7 @@ To enable CSRF protection one needs to create a Secret Key that will verify auth
 *simple form class*
 
 ```py
-class ReviewForm(FlaskForm):
+class ExampleForm(FlaskForm):
 
     title = StringField('Field title or label',validators=[Required()])
     review = TextAreaField('Field label', validators=[Required()])
