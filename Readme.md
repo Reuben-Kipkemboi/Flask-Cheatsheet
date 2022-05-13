@@ -129,6 +129,18 @@ class ExampleForm(FlaskForm):
     submit = SubmitField('Submit or any text to appear e.g LOGIN')
 ```
 
+## Running Flask Applications
+
+A flask extension called Flask-Script that is a command line parser that allows us to create startup configurations.
+
+*Installing flask script*
+```
+pip install flask-script
+```
+
+
+# Databases
+
 
 [Go Back to the top](#python-flask-cheatsheet)
 
