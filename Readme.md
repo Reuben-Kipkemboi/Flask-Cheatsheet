@@ -140,6 +140,64 @@ pip install flask-script
 
 
 # Databases
+**Categories**
+
++ **SQL** -Structured Query Language databases
++ **NOSQL**- Non Structured Query Language databases.
+
+## Postgres
+This is a type of SQL database
+
+Installation
+<ol>
+<li>Ubuntu</li>
+
+- First update by running the command:
+
+```sh
+sudo apt-get update
+```
+
+- To Install progress
+
+```sh
+sudo apt-get install postgresql postgresql-contrib libpq-dev
+```
+*when prompted enter option `Y` to continue and wait for installation to complete*
+
+- Defining a user Role
+
+*Postgres uses "roles" to aid in authentication and authorization. By default, Postgres creates a Postgres user and is the only user who can connect to the server.*
+
+Now run the commands below respectively (If working on an elementary Os)
+
+```sh
+sudo service postgresql start
+```
+
+```sh
+sudo -u postgres createuser --superuser $USER
+```
+*Provide a password if prompted to provide one*
+
+```sh
+sudo -u postgres createdb $USER
+```
+
+```sh
+touch .psql_history
+```
+*creates the .psql_history in order to save your history*
+
+- Now connect to the postgres server
+```
+psql
+```
+
+*[for other versions of Operating systems installation](https://www.postgresql.org/docs/current/)*
+</ol>
+
+
 
 
 [Go Back to the top](#python-flask-cheatsheet)
