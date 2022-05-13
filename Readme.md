@@ -1,4 +1,4 @@
-<mark>PYTHON FLASK CHEATSHEET</mark>
+## PYTHON FLASK CHEATSHEET
 
 ### Author
 
@@ -77,6 +77,7 @@ create a `base.html` file
 <html>
     <head>
         #You can have your styles linked here ......
+        
         <meta charset="utf-8">
         {% if title %}
         <title> {{ title }}</title>
