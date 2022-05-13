@@ -125,7 +125,7 @@ To enable CSRF protection one needs to create a Secret Key that will verify auth
 class ExampleForm(FlaskForm):
 
     title = StringField('Field title or label',validators=[Required()])
-    review = TextAreaField('Field label', validators=[Required()])
+    fieldname2 = TextAreaField('Field label', validators=[Required()])
     submit = SubmitField('Submit or any text to appear e.g LOGIN')
 ```
 
