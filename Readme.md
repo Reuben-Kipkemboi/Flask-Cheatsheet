@@ -8,7 +8,7 @@
 
 + [Introduction](#introduction)
 + [Concepts](#concepts)
-+ [Technology Used](#technologies-used)
++ [Technology Included](#technologies-included)
 + [License](#license)
 + [Authors Info](#authors-info)
 
