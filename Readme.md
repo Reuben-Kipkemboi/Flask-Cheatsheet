@@ -1,4 +1,4 @@
-## ==PYTHON FLASK CHEATSHEET==
+## <mark>PYTHON FLASK CHEATSHEET</mark>
 
 ### Author
 
@@ -33,7 +33,7 @@ The most convenient way to install Flask is using a virtual environment.
 ```
 python3.8 -m venv --without-pip virtual
 ```
-or *If you have pip installed globally?*
+or *If you have pip installed globally*
 
 ```
 python3.8 -m venv virtual 
@@ -76,11 +76,12 @@ create a `base.html` file
 <!DOCTYPE html>
 <html>
     <head>
+        #You can have your styles linked here ......
         <meta charset="utf-8">
         {% if title %}
         <title> {{ title }}</title>
         {% else %}
-        <title> Welcome to the flask cheatsheet </title>
+        <title> Welcome to flask cheatsheet </title>
         {% endif %}
     </head>
     <body>
@@ -88,6 +89,7 @@ create a `base.html` file
         {% block content %}
 
         {% endblock%}
+        #end of block content
     </body>
 </html>
 ```
