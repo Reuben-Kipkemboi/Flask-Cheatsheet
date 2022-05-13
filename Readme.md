@@ -147,10 +147,10 @@ pip install flask-script
 
 ## Postgres
 This is a type of SQL database
-
-Installation
 <ol>
-<li>Ubuntu</li>
+<li>Installation</li>
+
+### Ubuntu
 
 - First update by running the command:
 
@@ -194,7 +194,41 @@ touch .psql_history
 psql
 ```
 
-*[for other versions of Operating systems installation](https://www.postgresql.org/docs/current/)*
+*[for other versions of Operating systems psql installations](https://www.postgresql.org/docs/current/)*
+
+<li>SQL Basics</li>
+
+
+Common SQL commands
+
+```sh
+CREATE DATABASE database_name; # From the $USER database.
+
+CREATE TABLE table_name (id serial PRIMARY KEY, some_column varchar, another_column int);
+ALTER TABLE table_name ADD column_name boolean;
+
+ALTER TABLE table_name DROP column_name;
+
+
+SELECT * FROM table_name WHERE id >= 3;
+SELECT * FROM contacts WHERE NOT id >= 5;
+
+UPDATE users SET name = 'Reuben' WHERE id = 2;
+DROP TABLE table_name; # From the database that holds the tab
+```
+
+- psql commands
+
+- List all databases: \l.
+- Exit psql shell: \q
+- Connect to database: \c database_name
+- List tables in current database: \dt
+- Describe a table such as a column, type, modifiers of columns, etc: \d table_name
+- List columns in a table: \d table_name
+- See a list of all psql commands: \? (Press the down arrow to scroll through, or q to exit list.)
+- Execute the last command again : \g
+- Display command history: \s
+- [More commands](https://www.geeksforgeeks.org/postgresql-psql-commands/)
 </ol>
 
 
