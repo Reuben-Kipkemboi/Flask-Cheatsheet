@@ -1,4 +1,4 @@
-## <mark>PYTHON FLASK CHEATSHEET</mark>
+<mark>PYTHON FLASK CHEATSHEET</mark>
 
 ### Author
 
