@@ -93,6 +93,7 @@ create a `base.html` file
     </body>
 </html>
 ```
+
 Inside the body tag we have the block control block that defines elements that can be changed by the derived template.
 
 The `block content` is what we will be replacing in our other templates.
@@ -138,6 +139,7 @@ A flask extension called Flask-Script that is a command line parser that allows 
 pip install flask-script
 ```
 
+[Go Back to the top](#python-flask-cheatsheet)
 
 # Databases
 **Categories**
@@ -148,9 +150,10 @@ pip install flask-script
 ## Postgres
 This is a type of SQL database
 <ol>
-<li>Installation</li>
 
-### Ubuntu
+### <li>Installation</li>
+
+**Ubuntu**
 
 - First update by running the command:
 
@@ -196,7 +199,7 @@ psql
 
 *[for other versions of Operating systems psql installations](https://www.postgresql.org/docs/current/)*
 
-<li>SQL Basics</li>
+### <li>SQL Basics</li>
 
 
 Common SQL commands
@@ -217,7 +220,7 @@ UPDATE users SET name = 'Reuben' WHERE id = 2;
 DROP TABLE table_name; # From the database that holds the tab
 ```
 
-- psql commands
+#### psql commands
 
 - List all databases: \l.
 - Exit psql shell: \q
@@ -228,13 +231,31 @@ DROP TABLE table_name; # From the database that holds the tab
 - See a list of all psql commands: \? (Press the down arrow to scroll through, or q to exit list.)
 - Execute the last command again : \g
 - Display command history: \s
-- [More commands](https://www.geeksforgeeks.org/postgresql-psql-commands/)
+
+[More psql commands](https://www.geeksforgeeks.org/postgresql-psql-commands/)
+
+<li>SQLAlchemy</li>
+SQLAlchemy is an Object relational mapper that allows creation of a mapping between the database and the Python Objects in an application.
+
+It allows interaction with the database using Python objects that are    translated and mapped into SQL statements.
+
+Use of the Flask-SQLAlchemy extension that allows connection of SQLAlchemy to an application
+
+```
+pip install flask-SQLAlchemy
+```
+
+There is need of a driver that is helpful in connecting application to the database
+
+```
+pip install psycopg2
+```
 </ol>
 
 
 
 
-[Go Back to the top](#python-flask-cheatsheet)
+
 
 
 
